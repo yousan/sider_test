@@ -8,14 +8,10 @@
     "precommit": "lint-staged"
   },
   "lint-staged": {
-    "*.js": [
+    "*.{js, json, css, md}": [
       "prettier --write",
-      "git add"
-    ],
-    "*.ts": [
-      "prettier --write",
-      "git add"
-    ]
+      "git add",
+      ]
   },
   "name": "sider_test",
   "version": "1.0.0",
