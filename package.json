@@ -4,9 +4,7 @@
     "lint-staged": "^8.1.4",
     "prettier": "^1.16.4"
   },
-  "scripts": {
-    "precommit": "lint-staged"
-  },
+  "scripts": {},
   "lint-staged": {
     "*.{js, ts, json, css, md}": [
       "prettier --write",
@@ -18,5 +16,10 @@
   "main": "index.js",
   "repository": "git@github.com:yousan/sider_test.git",
   "author": "Yousan_O <yousan@l2tp.org>",
-  "license": "MIT"
+  "license": "MIT",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
 }
