@@ -1,5 +1,9 @@
 //bad comment spacing
 class Student
+
+
+
+
 {
     fullName: string;
 
